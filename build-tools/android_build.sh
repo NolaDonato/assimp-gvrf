@@ -40,8 +40,8 @@ export PATH=$PATH:$ANDROID_SDK/android-toolchain/bin
 # Add additional args here as appropriate
 cmake -DCMAKE_TOOLCHAIN_FILE=$ANDTOOLCHAIN \
       -DANDROID_NDK=$ANDROID_NDK \
-      -DCMAKE_BUILD_TYPE=Release \
-      -DANDROID_ABI="arm64-v8a" \
+      -DCMAKE_BUILD_TYPE=Debug \
+      -DANDROID_ABI="armeabi-v7a with NEON" \
       -DANDROID_NATIVE_API_LEVEL=android-21 \
       -DANDROID_FORCE_ARM_BUILD=TRUE \
       -DCMAKE_INSTALL_PREFIX=install \
